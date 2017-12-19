@@ -1,0 +1,128 @@
+/* css/main.css */
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+
+p, a {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+
+}
+
+footer {
+    background-color: black;
+    padding-top: 20px;
+    color: #01d277;
+    text-align: center;
+    display: inline-block;
+}
+
+img {
+    width: 70%;
+    height: 70%;
+    float: none;
+    padding: .5rem 1rem;
+}
+
+img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+#about {
+    padding: 8rem 0;
+    color: #01d277;
+}
+
+#headerText {
+    color: #01d277;
+}
+
+.page {
+    margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-light {
+    background-color: black;
+    color: #01d277;
+}
+.card {
+    margin-top: 50px;
+    padding: 20px 50px;
+    text-align: justify;
+    box-shadow: 5px 5px;
+    -webkit-transition: -webkit-transform ease-in-out 1s;
+    -webkit-transform-origin: top;
+    -webkit-transition-delay: 0.1s;
+}
+
+.card.show {
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    -webkit-transform: translateY(-9999px);
+}
+.card .card-title {
+    margin-top: 20px;
+}
+.medium {
+    max-width: 185px; ;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,300px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,300px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}

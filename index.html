@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="container-fluid">
+    <main>
+        <header>
+            <div class="row">
+                <nav class="navbar navbar-light fixed-top justify-content-between col-12">
+                    <div class="col-3">
+                        <a class="navbar-brand">Looking for a movie?</a>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-10">
+                                <input id="search-input" class="form-control" type="search" placeholder="Type here what you are looking for" autofocus aria-label="Search">
+                            </div>
+                            <div class="col-2">
+                                <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                    <img src="img/powered-by-square-green.svg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="page animated" id="search-results">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="headerText" class="text-center"></h2>
+                </div>
+                <div class="col-10 mx-auto">
+                    <section class="content row"></section>
+                </div>
+            </div>
+        </div>
+        <div class="page animated" id="recommend-results">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <section class="content row"></section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="row">
+        <footer class="fixed-bottom col-12">
+            <div class="row">
+                <div class="col-3">
+                    <p>Danilo Tiburcio Murta - No Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/iconic.min.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
